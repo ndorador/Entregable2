@@ -1,7 +1,7 @@
 
 
-/*Este codigo es para anotar la lista del supermercado para no olvidar el mandado.
-primer bucle for para solicitar los productos a comprar aqui solo ingresare 4, y 
+/*Este codigo es para anotar la lista del supermercado, para no olvidar el mandado.
+primer bucle for, es para solicitar los productos a comprar. se solicita solo 4 productos, y 
 luego otro bucle for para mostrar los nombres de la lista ingresada en la consola.*/ 
 
 let miLista = [];
