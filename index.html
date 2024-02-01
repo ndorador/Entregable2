@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregable01</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+
+  <!-- Vinculación al archivo de estilos externo -->
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
+    <!-- Contenedor principal de la página -->
+    <div class="container">
+
+        <!-- Título principal -->
+        <h1>Carrito de Compras</h1>
     
-
-
-    <script src="main.js"></script>
+        <!-- Grupo de entrada para el nombre del producto -->
+        <div class="input-group">
+          <label for="nombreProducto">Nombre del Producto:</label>
+          <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+        </div>
+    
+        <!-- Grupo de entrada para el precio del producto -->
+        <div class="input-group">
+          <label for="precioProducto">Precio del Producto:</label>
+          <input type="number" id="precioProducto" placeholder="Precio del producto">
+        </div>
+    
+        <!-- Botón para agregar productos al carrito -->
+        <button id="agregarProducto">Agregar al Carrito</button>
+    
+        <!-- Sección del carrito -->
+        <div id="carrito">
+          <!-- Título del carrito -->
+          <h2>Total del Listado</h2>
+          
+          <!-- Lista de productos en el carrito -->
+          <ul id="listaProductos"></ul>
+          
+          <!-- Elemento para mostrar el total del carrito -->
+          <span id="total"></span>
+        </div>
+    
+        <!-- Mensaje de resultado (éxito o error) -->
+        <p id="resultado"></p>
+    
+      </div>
+    
+      <!-- Vinculación al archivo de script JavaScript externo -->
+      <script src="main.js"></script>
 </body>
 </html>
