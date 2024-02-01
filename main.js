@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Se obtiene referencias a elementos del DOM
+  // referencias a elementos del DOM
   let nombreProductoInput = document.getElementById('nombreProducto');
   let precioProductoInput = document.getElementById('precioProducto');
   let agregarProductoButton = document.getElementById('agregarProducto');
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Función para mostrar los productos en el carrito
   function mostrarProductosEnCarrito() {
-      // Limpia la lista de productos en el carrito
+      // Se Limpia la lista de productos en el carrito
       listaProductosElement.innerHTML = '';
 
       let total = 0;
 
-      // Itera sobre los productos en el carrito y crea elementos de lista
+      // Aquí se repite sobre los productos en el carrito y crea elementos de lista
       productosEnCarrito.forEach(function(producto) {
           let listItem = document.createElement('li');
           listItem.textContent = producto.nombre + ' - $' + producto.precio.toFixed(2);
